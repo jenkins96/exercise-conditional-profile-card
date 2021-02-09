@@ -33,10 +33,10 @@ function render(variables = {}) {
 
   // Fullname
   let fullName = "Lucy Boilett";
-  if (variables.name != null || variables.lastName != null) {
+  if (variables.name != null || variables.lastname != null) {
     fullName =
-      (variables.name ? variables.name : "") +
-      (variables.lastName ? variables.lastName : "");
+      (variables.name ? variables.name : "") + " " +
+      (variables.lastname ? variables.lastname : "");
   }
 
   // Icon's Position
