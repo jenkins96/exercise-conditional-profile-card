@@ -33,16 +33,18 @@ function render(variables = {}) {
 
   // Fullname
   let fullName = "Lucy Boilett";
-  if(variables.name != null || variables.lastName != null){
-      fullName = (variables.name ? variables.name : "") + (varibales.lastName ? variables.lastName: "");
+  if (variables.name != null || variables.lastName != null) {
+    fullName =
+      (variables.name ? variables.name : "") +
+      (variables.lastName ? variables.lastName : "");
   }
 
   // Icon's Position
   let position = "position-right";
-  if(variables.socialMediaPosition == "position-right" ){
-      position = "position-right";
-  }else {
-      position = "position-left";
+  if (variables.socialMediaPosition == "position-right") {
+    position = "position-right";
+  } else {
+    position = "position-left";
   }
 
   // Role
@@ -55,19 +57,25 @@ function render(variables = {}) {
   let country = variables.country ? variables.country : "USA";
 
   // Twitter
-  let tw = variables.twitter ? variables.twitter : "https://twitter.com/alesanchezr";
+  let tw = variables.twitter
+    ? variables.twitter
+    : "https://twitter.com/alesanchezr";
 
   // Github
-  let gh = variables.github ? variables.github : "https://github.com/alesanchezr";
+  let gh = variables.github
+    ? variables.github
+    : "https://github.com/alesanchezr";
 
   //LinkedIn
-  let lk = variables.linkedin ? variables.linkedin : "https://linkedin.com/alesanchezr";
+  let lk = variables.linkedin
+    ? variables.linkedin
+    : "https://linkedin.com/alesanchezr";
 
   //Instagram
-  let ig = variables.instagram ? variables.instagram: "https://instagram.com/alesanchezr"; 
+  let ig = variables.instagram
+    ? variables.instagram
+    : "https://instagram.com/alesanchezr";
 
-
-  
   // reset the website body with the new html output
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
